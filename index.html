@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluto - Delicious Food Delivered</title>
+    <meta name="description" content="Pluto - Your favorite food delivery app. Order delicious meals from the comfort of your home.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/pluto1.png" alt="Pluto Logo" id="logo-img">
+                <h1>Pluto</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#categories">Menu</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="btn-secondary"><i class="fas fa-search"></i></button>
+                <button class="btn-secondary"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></button>
+                <button class="btn-primary">Sign In</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Delicious Food <span>Delivered</span> To Your Doorstep</h1>
+                <p>Order your favorite meals with just a few clicks and enjoy fresh, tasty food delivered right to your door.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Order Now</button>
+                    <button class="btn-outline">View Menu</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>30min</h3>
+                        <p>Delivery Time</p>
+                    </div>
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Restaurants</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/Deliciousfood.png" alt="Delicious Food">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Food Categories</h2>
+                <p>Explore our wide range of delicious options</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/pizza-icon.png" alt="Pizza">
+                    </div>
+                    <h3>Pizza</h3>
+                    <p>20+ Options</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/burger-icon.png" alt="Burgers">
+                    </div>
+                    <h3>Burgers</h3>
+                    <p>15+ Options</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/pasta-icon.png" alt="Pasta">
+                    </div>
+                    <h3>Pasta</h3>
+                    <p>12+ Options</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/salad-icon.png" alt="Salads">
+                    </div>
+                    <h3>Salads</h3>
+                    <p>10+ Options</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/dessert-icon.png" alt="Desserts">
+                    </div>
+                    <h3>Desserts</h3>
+                    <p>18+ Options</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/drinks-icon.png" alt="Drinks">
+                    </div>
+                    <h3>Drinks</h3>
+                    <p>22+ Options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="popular-dishes" id="popular">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Dishes</h2>
+                <p>Most ordered dishes by our customers</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pizza">Pizza</button>
+                    <button class="filter-btn" data-filter="burger">Burger</button>
+                    <button class="filter-btn" data-filter="pasta">Pasta</button>
+                </div>
+            </div>
+            <div class="dishes-grid">
+                <div class="dish-card" data-category="pizza">
+                    <div class="dish-image">
+                        <img src="images/pizza1.png" alt="Margherita Pizza">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+                        <div class="dish-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="burger">
+                    <div class="dish-image">
+                        <img src="images/burger1.png" alt="Classic Cheeseburger">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Classic Cheeseburger</h3>
+                        <p>Juicy beef patty with cheddar cheese and special sauce</p>
+                        <div class="dish-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="pasta">
+                    <div class="dish-image">
+                        <img src="images/pasta1.png" alt="Creamy Alfredo">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Creamy Alfredo</h3>
+                        <p>Fettuccine pasta with rich and creamy alfredo sauce</p>
+                        <div class="dish-footer">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="pizza">
+                    <div class="dish-image">
+                        <img src="images/pizza2.png" alt="Pepperoni Pizza">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Classic pizza topped with pepperoni and cheese</p>
+                        <div class="dish-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="burger">
+                    <div class="dish-image">
+                        <img src="images/burger2.png" alt="Spicy Beast Burger">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Spicy Beast Burger</h3>
+                        <p>Double beef patty with jalapeños and spicy sauce</p>
+                        <div class="dish-footer">
+                            <span class="price">$15.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="pasta">
+                    <div class="dish-image">
+                        <img src="images/pasta2.png" alt="Spaghetti Bolognese">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Spaghetti Bolognese</h3>
+                        <p>Classic Italian pasta with rich meat sauce</p>
+                        <div class="dish-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn-outline">View All Dishes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to order your favorite food</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Choose Your Food</h3>
+                    <p>Browse through our menu and select your favorite dishes</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Add to Cart</h3>
+                    <p>Add items to your cart and proceed to checkout</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Make Payment</h3>
+                    <p>Choose your preferred payment method</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food delivered to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="offers-content">
+                <h2>Special Offer</h2>
+                <h3>Get 20% OFF on Your First Order</h3>
+                <p>Use code: <span>PLUTO20</span></p>
+                <button class="btn-primary">Order Now</button>
+            </div>
+            <div class="offers-image">
+                <img src="images/special-offer.png" alt="Special Offer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="mobile-app" id="about">
+        <div class="container">
+            <div class="app-image">
+                <img src="images/mobile-app.png" alt="Pluto Mobile App">
+            </div>
+            <div class="app-content">
+                <h2>Download the Pluto App</h2>
+                <p>Get the full experience with our mobile app. Order food, track deliveries, and receive exclusive offers.</p>
+                <div class="app-features">
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <p>Fast Order Process</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Live Order Tracking</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tag"></i>
+                        <p>Exclusive App Offers</p>
+                    </div>
+                </div>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div class="app-btn-text">
+                            <span>GET IT ON</span>
+                            <span>Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <div class="app-btn-text">
+                            <span>Download on the</span>
+                            <span>App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>See why people love ordering from Pluto</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The food is always fresh and delivered on time. Best food delivery service I've ever used!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/customer1.png" alt="John Doe">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I love the variety of restaurants available. The app is so easy to use and the delivery is always prompt."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/customer2.png" alt="Jane Smith">
+                        </div>
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The customer service is outstanding. Had an issue with my order once and they resolved it immediately!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/customer3.png" alt="Robert Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Robert Johnson</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new restaurants, special offers, and more</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/pluto1.png" alt="Pluto Logo">
+                    <h2>Pluto</h2>
+                    <p>Delicious food delivered to your doorstep</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#categories">Menu</a></li>
+                            <li><a href="#popular">Popular</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i>Varanasi</li>
+                            <li><i class="fas fa-phone"></i> +91 7779843456</li>
+                            <li><i class="fas fa-envelope"></i> imnikhileshkr@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pluto. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Register the service worker
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')                                                           
+              .then(registration => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              })
+              .catch(err => {
+                console.log('ServiceWorker registration failed: ', err);
+              });
+          });
+        }
+      </script>
+</body>
+</html>
