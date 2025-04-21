@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food - Pluto</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/pluto1.png" alt="Pluto Logo" id="logo-img">
+                <h1>Pluto</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html" class="active">Order</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>             
+            </nav>
+            <div class="nav-buttons">
+                <button class="btn-secondary"><i class="fas fa-search"></i></button>
+                <button class="btn-secondary"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></button>
+                <div class="auth-buttons">
+                    <a href="register.html" class="btn-primary" id="signUpBtn">Sign Up</a>
+                    <button id="logoutBtn" class="btn-primary" style="display: none;">Logout</button>
+                    <span id="userNameDisplay" class="btn-primary" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Order Food</h2>
+                <p>Browse through our delicious menu and place your order</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="pizza">Pizza</button>
+                <button class="filter-btn" data-filter="burger">Burgers</button>
+                <button class="filter-btn" data-filter="pasta">Pasta</button>
+                <button class="filter-btn" data-filter="salad">Salads</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+                <button class="filter-btn" data-filter="drink">Drinks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Pizza Items -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-image">
+                        <img src="images/pizza1.png" alt="Margherita Pizza">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+                        <div class="item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-image">
+                        <img src="images/pizza2.png" alt="Pepperoni Pizza">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Classic pizza topped with pepperoni and cheese</p>
+                        <div class="item-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger Items -->
+                <div class="menu-item" data-category="burger">
+                    <div class="item-image">
+                        <img src="images/burger1.png" alt="Classic Cheeseburger">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Classic Cheeseburger</h3>
+                        <p>Juicy beef patty with cheddar cheese and special sauce</p>
+                        <div class="item-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="burger">
+                    <div class="item-image">
+                        <img src="images/burger2.png" alt="Spicy Beast Burger">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Spicy Beast Burger</h3>
+                        <p>Double beef patty with jalapeños and spicy sauce</p>
+                        <div class="item-footer">
+                            <span class="price">$15.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasta Items -->
+                <div class="menu-item" data-category="pasta">
+                    <div class="item-image">
+                        <img src="images/pasta1.png" alt="Creamy Alfredo">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Creamy Alfredo</h3>
+                        <p>Fettuccine pasta with rich and creamy alfredo sauce</p>
+                        <div class="item-footer">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pasta">
+                    <div class="item-image">
+                        <img src="images/pasta2.png" alt="Spaghetti Bolognese">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="item-content">
+                        <h3>Spaghetti Bolognese</h3>
+                        <p>Classic Italian pasta with rich meat sauce</p>
+                        <div class="item-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                const items = document.querySelectorAll('.menu-item');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const cartCount = document.querySelector('.cart-count');
+                let count = parseInt(cartCount.textContent);
+                cartCount.textContent = count + 1;
+                
+                // Add animation
+                button.classList.add('added');
+                setTimeout(() => {
+                    button.classList.remove('added');
+                }, 1000);
+            });
+        });
+
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = JSON.parse(localStorage.getItem('user'));
+            const signUpBtn = document.getElementById('signUpBtn');
+            const logoutBtn = document.getElementById('logoutBtn');
+            const userNameDisplay = document.getElementById('userNameDisplay');
+
+            if (user) {
+                signUpBtn.style.display = 'none';
+                logoutBtn.style.display = 'inline-block';
+                userNameDisplay.style.display = 'inline-block';
+                
+                const nameParts = user.name.split(' ');
+                const firstInitial = nameParts[0][0];
+                const lastInitial = nameParts[nameParts.length - 1][0];
+                const initials = (firstInitial + lastInitial).toUpperCase();
+                userNameDisplay.textContent = initials;
+                userNameDisplay.style.marginLeft = '10px';
+            }
+
+            logoutBtn.addEventListener('click', function() {
+                localStorage.removeItem('user');
+                localStorage.removeItem('token');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html> 

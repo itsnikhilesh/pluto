@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluto - Full Menu</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/pluto1.png" alt="Pluto Logo" id="logo-img">
+                <h1>Pluto</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#pizza">Pizza</a></li>
+                    <li><a href="#burger">Burgers</a></li>
+                    <li><a href="#pasta">Pasta</a></li>
+                    <li><a href="#salad">Salads</a></li>
+                    <li><a href="#dessert">Desserts</a></li>
+                    <li><a href="#drink">Drinks</a></li>
+                </ul>             
+            </nav>
+            <div class="nav-buttons">
+                <button class="btn-secondary"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></button>
+                <div class="auth-buttons">
+                    <a href="register.html" class="btn-primary" id="signUpBtn">Sign Up</a>
+                    <button id="logoutBtn" class="btn-primary" style="display: none;">Logout</button>
+                    <span id="userNameDisplay" class="btn-primary" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Pizza Section -->
+            <div class="menu-category" id="pizza">
+                <h2>Pizza</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pizza/margherita.jpg" alt="Margherita Pizza">
+                        </div>
+                        <div class="item-details">
+                            <h3>Margherita Pizza</h3>
+                            <p>Classic tomato sauce, mozzarella, and fresh basil</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart" data-item-id="pizza1" data-item-name="Margherita Pizza" data-item-price="299">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pizza/pepperoni.jpg" alt="Pepperoni Pizza">
+                        </div>
+                        <div class="item-details">
+                            <h3>Pepperoni Pizza</h3>
+                            <p>Spicy pepperoni, mozzarella, and tomato sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹399</span>
+                                <button class="add-to-cart" data-item-id="pizza2" data-item-name="Pepperoni Pizza" data-item-price="399">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pizza/veggie.jpg" alt="Veggie Pizza">
+                        </div>
+                        <div class="item-details">
+                            <h3>Veggie Pizza</h3>
+                            <p>Fresh vegetables, mozzarella, and tomato sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹349</span>
+                                <button class="add-to-cart" data-item-id="pizza3" data-item-name="Veggie Pizza" data-item-price="349">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Burgers Section -->
+            <div class="menu-category" id="burger">
+                <h2>Burgers</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/burgers/classic.jpg" alt="Classic Cheeseburger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Classic Cheeseburger</h3>
+                            <p>Juicy beef patty with cheddar cheese and special sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item-id="burger1" data-item-name="Classic Cheeseburger" data-item-price="199">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/burgers/spicy.jpg" alt="Spicy Beast Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Beast Burger</h3>
+                            <p>Double beef patty with jalapeños and spicy sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="add-to-cart" data-item-id="burger2" data-item-name="Spicy Beast Burger" data-item-price="249">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/burgers/veggie.jpg" alt="Veggie Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Veggie Burger</h3>
+                            <p>Plant-based patty with fresh vegetables</p>
+                            <div class="item-footer">
+                                <span class="price">₹179</span>
+                                <button class="add-to-cart" data-item-id="burger3" data-item-name="Veggie Burger" data-item-price="179">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta Section -->
+            <div class="menu-category" id="pasta">
+                <h2>Pasta</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pasta/alfredo.jpg" alt="Creamy Alfredo">
+                        </div>
+                        <div class="item-details">
+                            <h3>Creamy Alfredo</h3>
+                            <p>Fettuccine pasta with rich and creamy alfredo sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹279</span>
+                                <button class="add-to-cart" data-item-id="pasta1" data-item-name="Creamy Alfredo" data-item-price="279">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pasta/bolognese.jpg" alt="Spaghetti Bolognese">
+                        </div>
+                        <div class="item-details">
+                            <h3>Spaghetti Bolognese</h3>
+                            <p>Classic Italian pasta with meat sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹279</span>
+                                <button class="add-to-cart" data-item-id="pasta2" data-item-name="Spaghetti Bolognese" data-item-price="279">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pasta/arrabiata.jpg" alt="Penne Arrabiata">
+                        </div>
+                        <div class="item-details">
+                            <h3>Penne Arrabiata</h3>
+                            <p>Penne pasta with spicy tomato sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹259</span>
+                                <button class="add-to-cart" data-item-id="pasta3" data-item-name="Penne Arrabiata" data-item-price="259">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salads Section -->
+            <div class="menu-category" id="salad">
+                <h2>Salads</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/salads/caesar.jpg" alt="Caesar Salad">
+                        </div>
+                        <div class="item-details">
+                            <h3>Caesar Salad</h3>
+                            <p>Fresh romaine lettuce, croutons, parmesan, and Caesar dressing</p>
+                            <div class="item-footer">
+                                <span class="price">₹179</span>
+                                <button class="add-to-cart" data-item-id="salad1" data-item-name="Caesar Salad" data-item-price="179">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/salads/greek.jpg" alt="Greek Salad">
+                        </div>
+                        <div class="item-details">
+                            <h3>Greek Salad</h3>
+                            <p>Fresh vegetables, feta cheese, olives, and Greek dressing</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item-id="salad2" data-item-name="Greek Salad" data-item-price="199">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Section -->
+            <div class="menu-category" id="dessert">
+                <h2>Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/brownie.jpg" alt="Chocolate Brownie">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chocolate Brownie</h3>
+                            <p>Rich chocolate brownie with vanilla ice cream and chocolate sauce</p>
+                            <div class="item-footer">
+                                <span class="price">₹149</span>
+                                <button class="add-to-cart" data-item-id="dessert1" data-item-name="Chocolate Brownie" data-item-price="149">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/tiramisu.jpg" alt="Tiramisu">
+                        </div>
+                        <div class="item-details">
+                            <h3>Tiramisu</h3>
+                            <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream</p>
+                            <div class="item-footer">
+                                <span class="price">₹169</span>
+                                <button class="add-to-cart" data-item-id="dessert2" data-item-name="Tiramisu" data-item-price="169">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/red-velvet.jpg" alt="Red Velvet Cake">
+                        </div>
+                        <div class="item-details">
+                            <h3>Red Velvet Cake</h3>
+                            <p>Moist red velvet cake with cream cheese frosting and fresh berries</p>
+                            <div class="item-footer">
+                                <span class="price">₹189</span>
+                                <button class="add-to-cart" data-item-id="dessert3" data-item-name="Red Velvet Cake" data-item-price="189">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/cheesecake.jpg" alt="New York Cheesecake">
+                        </div>
+                        <div class="item-details">
+                            <h3>New York Cheesecake</h3>
+                            <p>Creamy cheesecake with graham cracker crust and berry compote</p>
+                            <div class="item-footer">
+                                <span class="price">₹179</span>
+                                <button class="add-to-cart" data-item-id="dessert4" data-item-name="New York Cheesecake" data-item-price="179">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/mousse.jpg" alt="Chocolate Mousse">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chocolate Mousse</h3>
+                            <p>Silky smooth chocolate mousse with whipped cream and chocolate shavings</p>
+                            <div class="item-footer">
+                                <span class="price">₹159</span>
+                                <button class="add-to-cart" data-item-id="dessert5" data-item-name="Chocolate Mousse" data-item-price="159">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/desserts/sundae.jpg" alt="Ice Cream Sundae">
+                        </div>
+                        <div class="item-details">
+                            <h3>Ice Cream Sundae</h3>
+                            <p>Three scoops of premium ice cream with hot fudge, nuts, and whipped cream</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item-id="dessert6" data-item-name="Ice Cream Sundae" data-item-price="199">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks Section -->
+            <div class="menu-category" id="drink">
+                <h2>Drinks</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/drinks/soft-drinks.jpg" alt="Soft Drinks">
+                        </div>
+                        <div class="item-details">
+                            <h3>Soft Drinks</h3>
+                            <p>Coke, Pepsi, Sprite, Fanta (300ml)</p>
+                            <div class="item-footer">
+                                <span class="price">₹99</span>
+                                <button class="add-to-cart" data-item-id="drink1" data-item-name="Soft Drinks" data-item-price="99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/drinks/fresh-juice.jpg" alt="Fresh Juice">
+                        </div>
+                        <div class="item-details">
+                            <h3>Fresh Juice</h3>
+                            <p>Orange, Apple, Pineapple, Watermelon (250ml)</p>
+                            <div class="item-footer">
+                                <span class="price">₹129</span>
+                                <button class="add-to-cart" data-item-id="drink2" data-item-name="Fresh Juice" data-item-price="129">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .menu-section {
+            padding: 80px 0;
+        }
+
+        .menu-category {
+            margin-bottom: 60px;
+        }
+
+        .menu-category h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item-details {
+            padding: 20px;
+        }
+
+        .item-details h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .item-details p {
+            margin: 0 0 15px 0;
+            color: #666;
+        }
+
+        .item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .add-to-cart {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

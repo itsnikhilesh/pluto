@@ -1,0 +1,1 @@
+import"./auth.js";import"./navigation.js";import"./service-worker.js";document.addEventListener("DOMContentLoaded",(function(){console.log("Main script loaded")}));

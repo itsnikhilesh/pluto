@@ -1,0 +1,25 @@
+{
+  "name": "pluto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsnikhilesh/pluto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/itsnikhilesh/pluto/issues"
+  },
+  "homepage": "https://github.com/itsnikhilesh/pluto#readme"
+}
